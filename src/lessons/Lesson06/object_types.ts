@@ -1,7 +1,3 @@
-/* eslint-disable prefer-const */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 //--- Тип any - можно использовать любой тип
 let city: any = 'Berlin';
 city = ['Paris', 12334];
