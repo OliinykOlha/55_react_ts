@@ -21,3 +21,5 @@ function Button({ name, onClick, disabled = false, type = 'submit' }: ButtonProp
     </button>
   )
 }
+
+export default Button;
