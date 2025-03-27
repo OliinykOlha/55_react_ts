@@ -4,12 +4,14 @@
 // import Homework06 from './homeworks/HomeWork06';
 // import Lesson06 from './lessons/Lesson06/Lesson06';
 // import Homework06 from "./homeworks/HomeWork06/HomeWork06";
+import HomeWork07 from "./homeworks/HomeWork07/HomeWork07";
 import Lesson07 from "./lessons/Lesson07/Lesson07";
 function App() {
 
   return (
     <>
-     <Lesson07/>
+    <HomeWork07/>
+     {/* <Lesson07/> */}
     {/* <Homework06 /> */}
       {/* <Task6 /> */}
       {/* <Lesson06 /> */}
