@@ -5,18 +5,21 @@
 // import Lesson08 from "./lessons/Lesson08/Lesson08";
 // import Lesson07 from "./lessons/Lesson07/Lesson07";
 
+import Lesson09 from "./lessons/Lesson09/lesson09";
+
 /////// Homework imports //////
 // import Homework06 from './homeworks/HomeWork06';
 // import Homework06 from "./homeworks/HomeWork06/HomeWork06";
 // import HomeWork07 from "./homeworks/HomeWork07/HomeWork07";
-import HomeWork08 from "./homeworks/HomeWork08/HomeWork08";
+// import HomeWork08 from "./homeworks/HomeWork08/HomeWork08";
 
 
 function App() {
 
   return (
     <>
-    <HomeWork08 />
+    <Lesson09 />
+    {/* <HomeWork08 /> */}
     {/* <Lesson08 /> */}
     {/* <HomeWork07/> */}
      {/* <Lesson07/> */}
