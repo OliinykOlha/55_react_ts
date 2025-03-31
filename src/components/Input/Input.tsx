@@ -1,4 +1,4 @@
-import './styles.css';
+import { InputComponent, InputContainer, Label } from './styles';
 import { InputProps } from './types';
 
 function Input({
@@ -8,12 +8,13 @@ function Input({
   type='text', 
   onChange, 
   label, 
-  id
+  id,
+  search
 }: InputProps)  {
     return (
-    <div className='input-container'>
-    <label htmlFor={id}>{label}</label>
-    <input 
+    <InputContainer>
+    <Label htmlFor={id}>{label}</Label>
+    <InputComponent 
     name={name}
      className="input-component"
      value={value}
@@ -21,8 +22,9 @@ function Input({
      onChange={onChange}
     placeholder={placeholder} 
     id={id}
+    isSearch = {search}
     /> 
-    </div> 
+    </InputContainer> 
     )
   }
   
