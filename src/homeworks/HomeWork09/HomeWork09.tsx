@@ -1,19 +1,19 @@
-import {CardInfo, CardWrapper, TextCardInfo, TitleCardInfo } from "./styles";
+import {ProfileCard, Homework09Container, Title, Description } from "./styles";
 
 function HomeWork09 () {
 
     return (
-        <CardWrapper>
-        <CardInfo vip>
-        <TitleCardInfo>VIP Пользователь</TitleCardInfo>
-        <TextCardInfo>Доступ к эксклюзивным функциям, персональный менеджер и приоритетная поддержка.</TextCardInfo>
-        </CardInfo>
+        <Homework09Container>
+        <ProfileCard vip>
+        <Title>VIP Пользователь</Title>
+        <Description>Доступ к эксклюзивным функциям, персональный менеджер и приоритетная поддержка.</Description>
+        </ProfileCard>
 
-         <CardInfo>
-         <TitleCardInfo>Обычный Пользователь</TitleCardInfo>
-         <TextCardInfo>Стандартный доступ, базовые функции и поддержка в порядке очереди.</TextCardInfo>
-         </CardInfo>
-         </CardWrapper>
+         <ProfileCard>
+         <Title>Обычный Пользователь</Title>
+         <Description>Стандартный доступ, базовые функции и поддержка в порядке очереди.</Description>
+         </ProfileCard>
+         </Homework09Container>
     )
 }
 
