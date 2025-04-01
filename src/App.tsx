@@ -1,3 +1,4 @@
+import HomeWork11 from "./homeworks/HomeWork11/HomeWork11"
 import GlobalStyles from "./styles/GlobalStyles"
 
 //Lessons imports
@@ -22,7 +23,7 @@ import GlobalStyles from "./styles/GlobalStyles"
 
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
-import Consultation05 from "./consultations/Consultation05/Consultation05"
+// import Consultation05 from "./consultations/Consultation05/Consultation05"
 
 function App () {
 
@@ -42,7 +43,8 @@ function App () {
       {/* <Lesson10 /> */}
       {/* <HomeWork10 /> */}
       {/* <Lesson11 /> */}
-      <Consultation05/>
+      {/* <Consultation05/> */}
+      <HomeWork11 />
       </>
     
   )
