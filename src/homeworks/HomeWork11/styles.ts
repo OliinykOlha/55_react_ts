@@ -12,5 +12,6 @@ export const HomeWork11Container = styled.div`
 `;
 
 export const Result = styled.h3`
-
-`
+font-size: 25px;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+`;
