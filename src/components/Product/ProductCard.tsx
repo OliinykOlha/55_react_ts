@@ -1,8 +1,17 @@
+import { useEffect } from 'react';
 import './styles.css';
 import { ProductCardProps } from "./types";
 
 
-function ProductCard ({name, price} : ProductCardProps) {
+function Product ({name, price} : ProductCardProps) {
+    // Unmounting
+useEffect(() => {
+    return () => {
+        console.log('Component will unmount');
+        
+    }
+}, []) 
+
     return (
         <div className="product-card-container">
         <h2>{name}</h2>
@@ -12,4 +21,4 @@ function ProductCard ({name, price} : ProductCardProps) {
 }
     
 
-export default ProductCard;
+export default Product;

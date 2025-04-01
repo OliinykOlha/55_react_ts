@@ -10,14 +10,14 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Lesson06 from "./lessons/Lesson06/Lesson06"
 // import Lesson09 from "./lessons/Lesson09/Lesson09"
 // import Lesson10 from "./lessons/Lesson10/Lesson10"
-
+import Lesson11 from "./lessons/Lesson11/Lesson11"
 
 //Homeworks imports
 // import Homework06 from "./homeworks/Homework06/Homework06"
 // import Homework07 from "./homeworks/Homework07/Homework07"
 // import Homework08 from "./homeworks/Homework08/Homework08"
 // import Homework09 from "./homeworks/Homework09/Homework09"
-import HomeWork10 from "./homeworks/HomeWork10/HomeWork10"
+// import HomeWork10 from "./homeworks/HomeWork10/HomeWork10"
 
 
 //Consultations imports
@@ -39,7 +39,8 @@ function App () {
       {/* <Lesson09 /> */}
       {/* <Homework09 /> */}
       {/* <Lesson10 /> */}
-      <HomeWork10 />
+      {/* <HomeWork10 /> */}
+      <Lesson11 />
       </>
     
   )
