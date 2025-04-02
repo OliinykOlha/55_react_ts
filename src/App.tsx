@@ -18,11 +18,12 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Homework08 from "./homeworks/Homework08/Homework08"
 // import Homework09 from "./homeworks/Homework09/Homework09"
 // import HomeWork10 from "./homeworks/HomeWork10/HomeWork10"
+import HomeWork11 from "./homeworks/HomeWork11/HomeWork11"
 
 
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
-import Consultation05 from "./consultations/Consultation05/Consultation05"
+// import Consultation05 from "./consultations/Consultation05/Consultation05"
 
 function App () {
 
@@ -42,7 +43,8 @@ function App () {
       {/* <Lesson10 /> */}
       {/* <HomeWork10 /> */}
       {/* <Lesson11 /> */}
-      <Consultation05/>
+      {/* <Consultation05/> */}
+      <HomeWork11 />
       </>
     
   )
