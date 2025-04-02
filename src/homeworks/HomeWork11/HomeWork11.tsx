@@ -4,36 +4,43 @@ import { HomeWork11Container, Result } from "./styles";
 
 function HomeWork11() {
 
-    const [firstInput, setFirstInput] = useState<string>("");
-    const [showCount, setShowCount] = useState<number>(0);
+    const [note, setNote] = useState<string>("");
+    const [additNote, setAdditNote] = useState<string>("");
+    const [countNoteChange, setCountNoteChange] = useState<number>(0);
 
-    const firstInputHandle = (event: ChangeEvent<HTMLInputElement>) => {
-        setFirstInput(event.target.value)
+    const onChangeNote = (event: ChangeEvent<HTMLInputElement>) => {
+        setNote(event.target.value)
         }
 
-    useEffect(() => {
-        if (firstInput !=="") {
-        setShowCount((prevValue) => prevValue + 1);
-        }
-    }, [firstInput]);
+        const onAdditChangeNote = (event: ChangeEvent<HTMLInputElement>) => {
+          setAdditNote(event.target.value)
+          }
+
+    useEffect(()=>{
+      if(note) {
+      setCountNoteChange((prevValue) => prevValue + 1)
+      }
+    }, [note])
 
   return (
     <HomeWork11Container>
       <Input
-        name="firstInput"
+        name="note"
+        placeholder="Enter your note"
         label="First Input"
         type="text"
-        value={firstInput}
-        onChange={firstInputHandle}
-      ></Input>
+        value={note}
+        onChange={onChangeNote}
+      />
+       <Result>Количество изменений в поле Note {countNoteChange}</Result>
       <Input
-        name="secondInput"
+        name="note_additional1"
+        placeholder='Enter your additional note'
         label="Second Input"
         type="text"
-        value=""
-        onChange={()=> []}
-      ></Input>
-      <Result>Количество изменений первого Input {showCount}</Result>
+        value={additNote}
+        onChange={onAdditChangeNote}
+      />
     </HomeWork11Container>
   );
 }

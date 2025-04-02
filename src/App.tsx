@@ -1,4 +1,3 @@
-import HomeWork11 from "./homeworks/HomeWork11/HomeWork11"
 import GlobalStyles from "./styles/GlobalStyles"
 
 //Lessons imports
@@ -19,6 +18,7 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Homework08 from "./homeworks/Homework08/Homework08"
 // import Homework09 from "./homeworks/Homework09/Homework09"
 // import HomeWork10 from "./homeworks/HomeWork10/HomeWork10"
+import HomeWork11 from "./homeworks/HomeWork11/HomeWork11"
 
 
 //Consultations imports
