@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import Button from "../../../components/Button/Button";
-import { CatsFactsWrapper, HomeWork12Container, Error } from "./styles";
+import {  HomeWork12Container, Error, FactsWrapper } from "./styles";
 import Spinner from "../../../components/Spinner/Spinner";
 
 
@@ -12,14 +12,14 @@ const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const CATS_FACTS_URL: string = "https://catfact.ninja/fact";
 
-  const getFacts = async () => {
+  const getFact = async () => {
 
     setError(undefined);
 
     try {
         setIsLoading(true);
         const response = await axios.get(CATS_FACTS_URL);
-       setFact(`${response.data.fact}`);
+       setFact(response.data.fact);
         
     } catch (error: any) {
          setError(error.message);
@@ -30,8 +30,8 @@ const [isLoading, setIsLoading] = useState<boolean>(false);
 
   return (
     <HomeWork12Container>
-      <Button name="GET MORE FACTS" onClick={getFacts} disabled={isLoading} />
-      <CatsFactsWrapper>{isLoading? <Spinner/> :fact}</CatsFactsWrapper>
+      <Button name="GET MORE FACTS" onClick={getFact} disabled={isLoading} />
+      <FactsWrapper>{isLoading? <Spinner/> :fact}</FactsWrapper>
       <Error>{error}</Error>
     </HomeWork12Container>
   );

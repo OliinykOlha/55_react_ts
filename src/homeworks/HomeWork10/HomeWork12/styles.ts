@@ -10,7 +10,7 @@ export const HomeWork12Container = styled.div`
   background-color: rgb(220, 217, 179);
 `;
 
-export const CatsFactsWrapper = styled.div`
+export const FactsWrapper = styled.div`
 display: flex;
  flex-direction: column;
  align-items: center;
