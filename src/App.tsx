@@ -6,7 +6,7 @@ import GlobalStyles from "./styles/GlobalStyles"
 
 //Homeworks imports
 // import HomeWork11 from "./homeworks/HomeWork11/HomeWork11"
-import HomeWork12 from "./homeworks/HomeWork10/HomeWork12/HomeWork12"
+ import HomeWork12 from "./homeworks/HomeWork10/HomeWork12/HomeWork12"
 
 
 function App () {
