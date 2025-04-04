@@ -5,7 +5,7 @@ interface MainButtonStyledProps {
 }
 
 export const MainButton = styled.button<MainButtonStyledProps>`
-  width: 300px;
+  width: 100%;
   height: fit-content;
   padding: 20px;
   background: ${({ isDanger }) =>
