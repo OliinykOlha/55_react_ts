@@ -28,6 +28,7 @@ function HomeWork12() {
   useEffect(() => {
     getFact();
   }, []);
+  
   return (
     <HomeWork12Container>
       <Button name="GET MORE FACTS" onClick={getFact} disabled={isLoading} />
