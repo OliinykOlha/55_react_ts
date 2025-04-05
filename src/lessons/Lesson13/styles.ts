@@ -9,6 +9,8 @@ display: flex;
   flex: 1;
   padding: 60px;
   background-color: rgb(30, 143, 174);
+  max-height: 700px; 
+  overflow-y: auto;
  
 `;
 
