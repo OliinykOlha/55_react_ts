@@ -1,6 +1,6 @@
 import axios from "axios";
 import Button from "../../components/Button/Button";
-import { ImageWrapper, Lesson13Container, Error } from "./styles";
+import { Image, Lesson13Container, Error } from "./styles";
 import { useEffect, useState } from "react";
 import Spinner from "../../components/Spinner/Spinner";
 import Input from "../../components/Input/Input";
@@ -21,13 +21,17 @@ function Lesson13() {
       const newImage = response.data.message;
       setImages((prevImages)=>[...prevImages, newImage ]);
 
-    } catch (error: any) {
+    } catch (error: unknown) {
+      if(axios.isAxiosError(error)) {
       setError(error.message);
-
+      } else {
+        setError('Unknown error')
+      }
     } finally {
       setIsLoading(false);
     }
   };
+
 
   const onChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value); 
@@ -49,11 +53,11 @@ function Lesson13() {
 
   return (
     <Lesson13Container>
-      <Button name="GET MORE IMAGES" onClick={getImg} />
+      <Button name="GET MORE IMAGES" onClick={getImg} disabled={isLoading} />
       {images.length > 0 && <Button name="DELETE ALL DATA" danger  onClick={deleteAllImages}/>}
       <Input name="Input" label="Введите запрос" value={query} onChange={onChangeInput} placeholder="Напишите что нибудь )"/>
-      {isLoading? <Spinner/> : undefined} 
-      {images.map(( image, index) => (<ImageWrapper src={image} key={index}  alt={`Dog image ${index}`}/>))}
+      {isLoading && <Spinner/>} 
+      {images.map(( image, index) => (<Image src={image} key={index}  alt={`Dog image ${index}`}/>))}
       <Error>{error}</Error>
     </Lesson13Container>
   );

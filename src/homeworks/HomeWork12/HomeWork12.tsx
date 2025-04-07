@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Button from "../../../components/Button/Button";
+import Button from "../../components/Button/Button";
 import { HomeWork12Container, Error, FactsWrapper } from "./styles";
-import Spinner from "../../../components/Spinner/Spinner";
+import Spinner from "../../components/Spinner/Spinner";
 
 function HomeWork12() {
   const [fact, setFact] = useState<string | undefined>(undefined);

@@ -14,8 +14,8 @@ display: flex;
  
 `;
 
-export const ImageWrapper = styled.img`
- min-width: 300px;
+export const Image = styled.img`
+ width: 300px;
  min-height: 300px;
  padding: 30px;
 `;

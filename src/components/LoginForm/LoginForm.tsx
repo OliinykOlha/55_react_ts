@@ -55,6 +55,7 @@ function LoginForm() {
       onChange={formik.handleChange} 
       error={formik.errors.password}
       />
+      
       <Button name='LOGIN' />
     </LoginFormComponent>
   );
