@@ -6,7 +6,7 @@ import Spinner from "../../components/Spinner/Spinner";
 import Input from "../../components/Input/Input";
 
 function Lesson13() {
-  const [image, setImage] = useState<string | undefined>(undefined);
+  const [images, setImages] = useState<string[]>([]);
   const [error, setError] = useState<string | undefined>(undefined);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [query, setQuery] = useState<string>("");
@@ -18,7 +18,8 @@ function Lesson13() {
     try {
       setIsLoading(true);
       const response = await axios.get(IMG_URL);
-      setImage(response.data.message);
+      const newImage = response.data.message;
+      setImages((prevImages)=>[...prevImages, newImage ]);
 
     } catch (error: any) {
       setError(error.message);
@@ -32,22 +33,27 @@ function Lesson13() {
     setQuery(event.target.value); 
   }
 
-  useEffect(() => {
-    if (query !=="") {
-        getImg ()
-
-    }}, [query]);
+  const deleteAllImages = () => {
+    setImages([]);
+  }
 
   useEffect(() => {
     getImg();
   }, []);
 
+  useEffect(() => {
+    if (query.trim() !=="") {
+        getImg ()
+
+    }}, [query]);
+
   return (
     <Lesson13Container>
-      <Button name="Get More Images" onClick={getImg} />
+      <Button name="GET MORE IMAGES" onClick={getImg} />
+      {images.length > 0 && <Button name="DELETE ALL DATA" danger  onClick={deleteAllImages}/>}
       <Input name="Input" label="Введите запрос" value={query} onChange={onChangeInput} placeholder="Напишите что нибудь )"/>
       {isLoading? <Spinner/> : undefined} 
-     <ImageWrapper src={image}/> 
+      {images.map(( image, index) => (<ImageWrapper src={image} key={index}  alt={`Dog image ${index}`}/>))}
       <Error>{error}</Error>
     </Lesson13Container>
   );
