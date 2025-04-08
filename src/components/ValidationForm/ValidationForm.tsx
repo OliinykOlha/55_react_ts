@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-import Button from "../../Button/Button";
-import Input from "../../Input/Input";
+import Button from "../Button/Button";
+import Input from "../Input/Input";
 import {
   Checkbox,
   CheckboxContainer,

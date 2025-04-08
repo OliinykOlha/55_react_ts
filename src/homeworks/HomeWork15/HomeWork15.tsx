@@ -1,4 +1,4 @@
-import ValidationForm from "../../components/EmployeeForm/ValidationForm/ValidationForm";
+import ValidationForm from "../../components/ValidationForm/ValidationForm";
 import { HomeWork15Container } from "./styles";
 
 function HomeWork15 () {
