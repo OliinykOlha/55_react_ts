@@ -14,7 +14,7 @@ import {
 } from "./styles"
 import { LayoutProps, NavLinkObj } from "./types"
 import { navLinksData } from "./data"
-import { Link, NavLink, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Logo from '../../assets/avatar.jpg';
 import Button from "../Button/Button";
 
