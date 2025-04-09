@@ -10,7 +10,7 @@ padding: 60px;
 background-color: rgb(232, 238, 197);
 `;
 
-export const Title = styled.h1`
+export const Title = styled.div`
 font-size: 40px;
 font-weight: bold;
 color: #F54C51 

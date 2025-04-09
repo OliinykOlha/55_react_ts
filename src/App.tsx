@@ -5,6 +5,7 @@ import About from "./pages/About/About"
 import Home from "./pages/Home/Home"
 import GlobalStyles from "./styles/GlobalStyles"
 
+
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
 // при импорте по умолчанию можно использовать другое названия для компонента
@@ -31,6 +32,7 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Homework12 from "./homeworks/Homework12/Homework12"
 // import Homework14 from "./homeworks/Homework14/Homework14"
 // import Homework15 from "./homeworks/Homework15/Homework15"
+import Course from './pages/Course/Course';
 
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
@@ -51,6 +53,7 @@ function App() {
           который должен быть вызван, если выполнен переход по этому маршруту */}
           <Route path='/' element={<Home />}/>
           <Route path='/about' element={<About />}/>
+          <Route path='/course' element={<Course />}/>
         </Routes>
       </Layout>
     </BrowserRouter>
