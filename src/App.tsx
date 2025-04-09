@@ -4,7 +4,7 @@ import Layout from "./components/Layout/Layout"
 import About from "./pages/About/About"
 import Home from "./pages/Home/Home"
 import GlobalStyles from "./styles/GlobalStyles"
-import Course from './pages/Course/Course';
+
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -32,6 +32,7 @@ import Course from './pages/Course/Course';
 // import Homework12 from "./homeworks/Homework12/Homework12"
 // import Homework14 from "./homeworks/Homework14/Homework14"
 // import Homework15 from "./homeworks/Homework15/Homework15"
+import Course from './pages/Course/Course';
 
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
