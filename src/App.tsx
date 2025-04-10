@@ -41,6 +41,7 @@ import Clients from './pages/Clients/Clients'
 import Facebook from './pages/Clients/components/Facebook/Facebook'
 import Microsoft from './pages/Clients/components/Microsoft/Microsoft'
 import Amazon from './pages/Clients/components/Amazon/Amazon'
+import Lesson18 from './lessons/Lesson18/Lesson18'
 
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
@@ -70,6 +71,8 @@ function App() {
           <Route path='/clients/facebook' element={<Facebook/>}/>
           <Route path='/clients/microsoft' element={<Microsoft/>}/>
           <Route path='/clients/amazon' element={<Amazon/>}/>
+          <Route path='/lesson18' element={<Lesson18/>}/>
+
         </Routes>
       </Layout>
     </BrowserRouter>

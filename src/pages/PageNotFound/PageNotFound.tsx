@@ -7,4 +7,5 @@ function PageNotFound() {
     </PageNotFoundWrapper>
   )
 }
+
 export default PageNotFound;

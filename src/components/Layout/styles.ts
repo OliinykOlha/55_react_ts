@@ -49,7 +49,7 @@ export const Footer = styled.footer`
 `;
 
 export const ButtonContainer = styled.div`
-width: 50px;
+width: 40px;
 `;
 
 export const LogoText = styled.div`
