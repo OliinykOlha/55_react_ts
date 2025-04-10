@@ -37,6 +37,10 @@ import Course from './pages/Course/Course';
 import Designer from './pages/Users/components/Designer/Designer';
 import Manager from './pages/Users/components/Manager/Manager';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
+import Clients from './pages/Clients/Clients'
+import Facebook from './pages/Clients/components/Facebook/Facebook'
+import Microsoft from './pages/Clients/components/Microsoft/Microsoft'
+import Amazon from './pages/Clients/components/Amazon/Amazon'
 
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
@@ -62,6 +66,10 @@ function App() {
           <Route path='/users/designer' element={<Designer />} />
           <Route path='/users/manager' element ={<Manager />} />
           <Route path='*' element={<PageNotFound />} />
+          <Route path='/clients' element={<Clients />}/>
+          <Route path='/clients/facebook' element={<Facebook/>}/>
+          <Route path='/clients/microsoft' element={<Microsoft/>}/>
+          <Route path='/clients/amazon' element={<Amazon/>}/>
         </Routes>
       </Layout>
     </BrowserRouter>
