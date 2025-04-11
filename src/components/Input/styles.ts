@@ -8,7 +8,7 @@ export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 6px;
-  width: 250px;
+  width: 400px;
 `;
 
 export const InputComponent = styled.input<InputComponentProps>`
